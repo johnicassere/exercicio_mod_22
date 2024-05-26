@@ -1,0 +1,60 @@
+@use './componentes/variaveis';
+
+.header{
+    padding-top: 48px;
+    padding-bottom: 100px;
+    background-image: url(../images/fundoNiver.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .container{
+        position: relative;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variaveis.$secundaryTextColor;
+        content: '';
+        opacity: 0.2;
+    }
+
+    &__text{
+        text-align: center;
+        margin-top: 64px;
+        margin-bottom: 60px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800;
+        text-shadow: 1px 1px 2px #000 , 0 0 1em rgb(41, 0, 128), 0 0 0.2em rgb(41, 0, 128);
+    }
+    
+    &__logo{
+        margin: 0 auto;
+        height: 150px;
+        display: block;
+    }
+
+    img{
+        border-radius: 50%;
+    }
+
+    @media(max-width: 640px){
+        padding: 40px 0;
+
+
+        &__logo{
+            height: 40px;
+        }
+
+        &__text{
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+}

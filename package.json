@@ -1,7 +1,7 @@
 {
   "name": "exercicio_mod_22",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
   "scripts": {
     "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js --no-cache",
     "build": "parcel build src/index.html",
@@ -10,12 +10,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
-    "parcel": "^2.12.0"
-  },
-  "dependencies": {
-    "sharp": "^0.33.3"
+    "parcel": "^2.12.0",
+    "sharp": "^0.31.3"
   }
 }

@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio Modulo 22</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <img src="http://via.placeholder.com/200x200" alt="">
-            <p>
-                Proximo aniverssario começa em <span id="contador"></span>
+            <img src="http://via.placeholder.com/200x200" class="header__logo" alt="avatar">
+            <p class="header__text">
+                Proximo aniversário começa em <span id="contador"></span>
             </p>
-            <div class="infos">
-                <ul>
-                    <li>
-                        <b>1</b>
-                        Allianz Parque - Barra Funda - São Paulo
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        <div id="endereco"></div>
+                        <!-- <span class="infos-bar__localizacao"></span> -->
                     </li>
-                    <li>
-                        <b>2</b>
-                        Allianz Parque - Barra Funda - São Paulo
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        <span id="preco" class="infos-bar__preco"></span>
                     </li>
-                    <li>
-                        <b>3</b>
-                        Allianz Parque - Barra Funda - São Paulo
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        <span id="quando" class="info-bar__data"></span>
                     </li>
                 </ul>
                 <a class="button button--primary" href="#">Ganhar convite</a>
@@ -34,18 +38,71 @@
         </div>
     </header>
 
-    <section class="event">
-        <div class="container">
-            <div class="details">
-                <h2>Titulo</h2>
-                <p>
+    <section class="event event--aniversario">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Anivesário</h2>
+                <p class="event__details__descricao">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Velit sed facere unde quisquam, nisi fugiat! Sed ipsa
+                    Velit sed facere unde quisquam, nisi fugiat! Sed ipsa
                     Velit sed facere unde quisquam, nisi fugiat! Sed ipsa
                 </p>
             </div>
-            <img class="img" src="#" alt="">
+            <img class="event__img" src="./images/birthday.jpg" alt="Salao">
         </div>
     </section>
-    
+
+    <section class="event event--casamento event--image-reverse">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Casamento</h2>
+                <p class="event__details__descricao">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Velit sed facere unde quisquam, nisi fugiat! Sed ipsa
+                    Velit sed facere unde quisquam, nisi fugiat! Sed ipsa
+                    Velit sed facere unde quisquam, nisi fugiat! Sed ipsa
+                </p>
+            </div>
+            <img class="event__img" src="./images/casamento.jpg" alt="Salao">
+        </div>
+    </section>
+
+    <section class="event event--bodas">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Bodas</h2>
+                <p class="event__details__descricao">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Velit sed facere unde quisquam, nisi fugiat! Sed ipsa
+                    Velit sed facere unde quisquam, nisi fugiat! Sed ipsa
+                    Velit sed facere unde quisquam, nisi fugiat! Sed ipsa
+                </p>
+            </div>
+            <img class="event__img" src="./images/bodas.jpg" alt="Salao">
+        </div>
+    </section>
+
+    <section class="event event--eventos event--image-reverse">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Eventos</h2>
+                <p class="event__details__descricao">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Velit sed facere unde quisquam, nisi fugiat! Sed ipsa
+                    Velit sed facere unde quisquam, nisi fugiat! Sed ipsa
+                    Velit sed facere unde quisquam, nisi fugiat! Sed ipsa
+                </p>
+            </div>
+            <img class="event__img" src="./images/eventos.jpg" alt="Salao">
+        </div>
+    </section>
+
+
+
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/jquery.mask.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
